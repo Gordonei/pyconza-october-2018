@@ -1,14 +1,14 @@
-# Cape Town Python User Group July 2018
+# PyConZA October 2018
 Gordon Inggs, 2018 (gordon.e.inggs@ieee.org)
 
-Hello, this is a repo will all of the content from my talk on 7 July, 2018. If you were there, I hope you enjoyed the talk!
+Hello, this is a repo will all of the content from my talk on 12 October, 2018. If you were there, I hope you enjoyed the talk!
 
 ## Contents
 From the root of the repo, these are the contents:
 ```bash
 .
-├── code # All code used
-│   ├── CTPUG_OpenCL_Talk.ipynb
+├── code # All code notebooks used
+│   ├── PyConZA_OpenCL_Talk.ipynb
 │   ├── java_hash.cl
 │   └── vector_sum.cl
 ├── LICENSE
@@ -22,7 +22,7 @@ From the root of the repo, these are the contents:
 │       ├── setup_nvida_gpu.sh # Assuming Ubuntu 16.04
 │       └── setup_xilinx_fpga.sh # Assuming AWS FPGA Developer AMI
 └── slides # Slides
-    └── CTPUG_Talk_July2018.pdf
+    └── PyConZA_Talk_October2018.pdf
 ```
 
 ## Getting Started
