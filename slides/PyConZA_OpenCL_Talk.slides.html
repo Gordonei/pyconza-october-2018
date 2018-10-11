@@ -13246,8 +13246,8 @@ a.anchor-link {
 <p>Github: <em>Gordonei</em></p>
 <p>Day Job(s):</p>
 <ul>
-<li><em>Science Data, City of Cape Town</em></li>
-<li>*Application Acceleration Consultant, My Lounge/Back Garden**</li>
+<li>Science Data, City of Cape Town</li>
+<li>Application Acceleration Consultant, My Lounge/Back Garden*</li>
 </ul>
 <p>*weather permitting</p>
 
@@ -13341,7 +13341,7 @@ a.anchor-link {
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13349,14 +13349,14 @@ a.anchor-link {
 
 </div>
 </div>
-</div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="The-Challenges-of-Heterogeneous-Computing">The Challenges of Heterogeneous Computing<a class="anchor-link" href="#The-Challenges-of-Heterogeneous-Computing">&#182;</a></h1><ol>
-<li>The Orientation Problem</li>
-<li>The IO Problem</li>
-<li>The Conceptual Problem</li>
+<li>The Orientation Problem - turning things on!</li>
+<li>The IO Problem - moving data around!</li>
+<li>The Conceptual Problem - what am I doing?!?</li>
 </ol>
 
 </div>
@@ -13376,7 +13376,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</aside></section></section><section><section>
+</aside></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13405,11 +13405,11 @@ personal computers, servers, mobile devices and embedded platforms.’</p>
 </div>
 </div>
 </div>
-</aside>
+</aside></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Khronos-Group-Promoters">Khronos Group Promoters<a class="anchor-link" href="#Khronos-Group-Promoters">&#182;</a></h2><p><img src="../img/khronos_group_promoters.png" alt="Khronos Group Promoters"></p>
+<h2 id="Khronos-Group-Promoters">Khronos Group Promoters<a class="anchor-link" href="#Khronos-Group-Promoters">&#182;</a></h2><p><img src="./img/khronos_group_promoters.png" alt="Khronos Group Promoters"></p>
 
 </div>
 </div>
@@ -13424,7 +13424,7 @@ personal computers, servers, mobile devices and embedded platforms.’</p>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pyopencl</span>
@@ -13438,7 +13438,7 @@ personal computers, servers, mobile devices and embedded platforms.’</p>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ocl_platforms</span> <span class="o">=</span> <span class="p">(</span><span class="n">platform</span><span class="o">.</span><span class="n">name</span> 
@@ -13473,7 +13473,7 @@ NVIDIA CUDA
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nvidia_platform</span> <span class="o">=</span> <span class="p">[</span><span class="n">platform</span> 
@@ -13506,7 +13506,7 @@ NVIDIA CUDA
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nvidia_context</span> <span class="o">=</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">Context</span><span class="p">(</span><span class="n">devices</span><span class="o">=</span><span class="n">nvidia_devices</span><span class="p">)</span>
@@ -13530,7 +13530,7 @@ NVIDIA CUDA
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">program_kernel_names</span> <span class="o">=</span> <span class="n">nvidia_program</span><span class="o">.</span><span class="n">get_info</span><span class="p">(</span><span class="n">pyopencl</span><span class="o">.</span><span class="n">program_info</span><span class="o">.</span><span class="n">KERNEL_NAMES</span><span class="p">)</span>
@@ -13559,7 +13559,7 @@ NVIDIA CUDA
 </div>
 </div>
 
-</div>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13567,7 +13567,7 @@ NVIDIA CUDA
 
 </div>
 </div>
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13579,7 +13579,7 @@ NVIDIA CUDA
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_ocl_kernel</span><span class="p">(</span><span class="n">queue</span><span class="p">,</span> <span class="n">kernel</span><span class="p">,</span> <span class="n">global_size</span><span class="p">,</span>
@@ -13619,7 +13619,7 @@ NVIDIA CUDA
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">check_sum_results</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
@@ -13638,7 +13638,7 @@ NVIDIA CUDA
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Synthetic data setup</span>
@@ -13666,7 +13666,7 @@ NVIDIA CUDA
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nvidia_queue</span> <span class="o">=</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">CommandQueue</span><span class="p">(</span><span class="n">nvidia_context</span><span class="p">)</span>
@@ -13683,7 +13683,7 @@ NVIDIA CUDA
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">check_sum_results</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
@@ -13714,7 +13714,7 @@ NVIDIA CUDA
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> run_ocl_kernel(nvidia_queue, nvidia_program.sum, (N,), input_tuples, output_tuples)
@@ -13734,7 +13734,7 @@ NVIDIA CUDA
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2.14 ms ± 117 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+<pre>2.65 ms ± 507 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 </pre>
 </div>
 </div>
@@ -13769,14 +13769,21 @@ NVIDIA CUDA
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Using-global-memory">Using global memory<a class="anchor-link" href="#Using-global-memory">&#182;</a></h2><p>Differentiating between different memory flags, and defining some utility functions to help set up memories.</p>
+<h2 id="OpenCL-Memory-Abstractions">OpenCL Memory Abstractions<a class="anchor-link" href="#OpenCL-Memory-Abstractions">&#182;</a></h2><p><img src="./img/opencl_memory_abstractions.png" alt="OpenCL Memory"></p>
 
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Using-global-memory">Using global memory<a class="anchor-link" href="#Using-global-memory">&#182;</a></h2>
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_input_memory</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">input_arrays</span><span class="p">):</span>
@@ -13793,7 +13800,7 @@ NVIDIA CUDA
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_output_memory</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">output_arrays</span><span class="p">):</span>
@@ -13810,7 +13817,7 @@ NVIDIA CUDA
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
@@ -13850,74 +13857,6 @@ NVIDIA CUDA
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Using-local-and-private-memory">Using local and private memory<a class="anchor-link" href="#Using-local-and-private-memory">&#182;</a></h2><p>Exploring the use of more localised memories to optimise performance.</p>
-<p>Most of the difference lives in the kernels, which are defined in a separate file.</p>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_program</span><span class="p">(</span><span class="n">ocl_file</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">build_options</span><span class="o">=</span><span class="p">[]):</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">ocl_file</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">opencl_file</span><span class="p">:</span>
-        <span class="n">program_source_code</span> <span class="o">=</span> <span class="n">opencl_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-        <span class="n">program_source</span> <span class="o">=</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">Program</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">program_source_code</span><span class="p">)</span>
-        <span class="n">program</span> <span class="o">=</span> <span class="n">program_source</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">build_options</span><span class="p">)</span>
-        
-        <span class="k">return</span> <span class="n">program</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">16</span>
-<span class="n">wg_size</span> <span class="o">=</span> <span class="mi">32</span>
-<span class="n">power</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">build_options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;-D&quot;</span><span class="p">,</span><span class="s2">&quot;BATCH_SIZE=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">batch_size</span><span class="p">),</span>
-                 <span class="s2">&quot;-D&quot;</span><span class="p">,</span><span class="s2">&quot;WG_SIZE=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">wg_size</span><span class="p">),</span>
-                 <span class="s2">&quot;-D&quot;</span><span class="p">,</span><span class="s2">&quot;POW=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">power</span><span class="p">)]</span>
-
-<span class="n">nvidia_program</span> <span class="o">=</span> <span class="n">build_program</span><span class="p">(</span><span class="s2">&quot;vector_sum.cl&quot;</span><span class="p">,</span> <span class="n">nvidia_context</span><span class="p">,</span> <span class="n">build_options</span><span class="p">)</span>
-<span class="n">run_ocl_kernel</span><span class="p">(</span><span class="n">nvidia_queue</span><span class="p">,</span> <span class="n">nvidia_program</span><span class="o">.</span><span class="n">sum</span><span class="p">,</span> <span class="p">(</span><span class="n">N</span><span class="p">,),</span> <span class="n">input_tuples</span><span class="p">,</span> <span class="n">output_tuples</span><span class="p">,</span> <span class="p">(</span><span class="n">wg_size</span><span class="p">,))</span>
-<span class="n">check_sum_results</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>result matches!
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Batching">Batching<a class="anchor-link" href="#Batching">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">kernel</span> <span class="kt">void</span> <span class="nf">sum_batched</span><span class="p">(</span><span class="n">global</span> <span class="kt">float</span> <span class="o">*</span><span class="n">a</span><span class="p">,</span> 
                         <span class="n">global</span> <span class="kt">float</span> <span class="o">*</span><span class="n">b</span><span class="p">,</span>
                         <span class="n">global</span> <span class="kt">float</span> <span class="o">*</span><span class="n">c</span><span class="p">){</span>
@@ -13933,7 +13872,7 @@ NVIDIA CUDA
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> run_ocl_kernel(nvidia_queue, nvidia_program.sum_batched, (N//batch_size,), input_tuples, output_tuples)
@@ -13953,7 +13892,7 @@ NVIDIA CUDA
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2.97 ms ± 121 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+<pre>3.62 ms ± 543 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 </pre>
 </div>
 </div>
@@ -13962,6 +13901,13 @@ NVIDIA CUDA
 </div>
 
 </div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Using-local-and-private-memory">Using local and private memory<a class="anchor-link" href="#Using-local-and-private-memory">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13990,7 +13936,7 @@ NVIDIA CUDA
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> run_ocl_kernel(nvidia_queue, nvidia_program.sum_batched_private, (N//batch_size,), input_tuples, output_tuples)
@@ -14010,243 +13956,7 @@ NVIDIA CUDA
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2.2 ms ± 37.1 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Vectorising">Vectorising<a class="anchor-link" href="#Vectorising">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">kernel</span> <span class="kt">void</span> <span class="nf">sum16</span><span class="p">(</span><span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">a</span><span class="p">,</span> 
-                  <span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">b</span><span class="p">,</span>
-                  <span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">c</span><span class="p">){</span>
-  <span class="kt">int</span> <span class="n">gid</span> <span class="o">=</span> <span class="n">get_global_id</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-
-  <span class="n">c</span><span class="p">[</span><span class="n">gid</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">gid</span><span class="p">]</span> <span class="o">+</span> <span class="n">b</span><span class="p">[</span><span class="n">gid</span><span class="p">];</span>
-<span class="p">}</span>
-</pre></div>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> run_ocl_kernel(nvidia_queue, nvidia_program.sum16, (N//16,), input_tuples, output_tuples)
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2.02 ms ± 22.7 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Vectorised-+-Local-Memory">Vectorised + Local Memory<a class="anchor-link" href="#Vectorised-+-Local-Memory">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">kernel</span> <span class="kt">void</span> <span class="nf">sum16_local</span><span class="p">(</span><span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">a</span><span class="p">,</span> 
-                        <span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">b</span><span class="p">,</span>
-                        <span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">c</span><span class="p">){</span>
-  <span class="kt">int</span> <span class="n">wid</span> <span class="o">=</span> <span class="n">get_group_id</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">*</span><span class="n">WG_SIZE</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">lid</span> <span class="o">=</span> <span class="n">get_local_id</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-
-  <span class="n">local</span> <span class="n">float16</span> <span class="n">a_local</span><span class="p">[</span><span class="n">WG_SIZE</span><span class="p">],</span> <span class="n">b_local</span><span class="p">[</span><span class="n">WG_SIZE</span><span class="p">],</span> <span class="n">c_local</span><span class="p">[</span><span class="n">WG_SIZE</span><span class="p">];</span>
-
-  <span class="c1">// Copying on</span>
-  <span class="n">event_t</span> <span class="n">copyon</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
-  <span class="n">copyon</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">async_work_group_copy</span><span class="p">(</span><span class="n">a_local</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">wid</span><span class="p">,</span> <span class="n">WG_SIZE</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="n">copyon</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">async_work_group_copy</span><span class="p">(</span><span class="n">b_local</span><span class="p">,</span> <span class="n">b</span> <span class="o">+</span> <span class="n">wid</span><span class="p">,</span> <span class="n">WG_SIZE</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="n">wait_group_events</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">copyon</span><span class="p">);</span>
-
-  <span class="n">c_local</span><span class="p">[</span><span class="n">lid</span><span class="p">]</span> <span class="o">=</span> <span class="n">a_local</span><span class="p">[</span><span class="n">lid</span><span class="p">]</span> <span class="o">+</span> <span class="n">b_local</span><span class="p">[</span><span class="n">lid</span><span class="p">];</span>
-
-  <span class="c1">// Copying off</span>
-  <span class="n">event_t</span> <span class="n">copyoff</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
-  <span class="n">copyoff</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">async_work_group_copy</span><span class="p">(</span><span class="n">c</span> <span class="o">+</span> <span class="n">wid</span><span class="p">,</span> <span class="n">c_local</span><span class="p">,</span> <span class="n">WG_SIZE</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="n">wait_group_events</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">copyoff</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></div>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> run_ocl_kernel(nvidia_queue, nvidia_program.sum16_local, (N//16,), input_tuples, output_tuples)
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2 ms ± 23.9 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="But,-before-we-think-that-we're-too-clever:">But, before we think that we're too clever:<a class="anchor-link" href="#But,-before-we-think-that-we're-too-clever:">&#182;</a></h2><p>What about good old <code>numpy</code>?</p>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> (a+b)
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>503 µs ± 18.1 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Increasing-the-computational-work">Increasing the computational work<a class="anchor-link" href="#Increasing-the-computational-work">&#182;</a></h2><p>Now we make the kernel: $\vec{c} = {(\vec{a} + \vec{b}) }^{x}$</p>
-<div class="highlight"><pre><span></span><span class="n">kernel</span> <span class="kt">void</span> <span class="nf">sum16_pow</span><span class="p">(</span><span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">a</span><span class="p">,</span> 
-                      <span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">b</span><span class="p">,</span>
-                      <span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">c</span><span class="p">){</span>
-  <span class="kt">int</span> <span class="n">gid</span> <span class="o">=</span> <span class="n">get_global_id</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-
-  <span class="n">c</span><span class="p">[</span><span class="n">gid</span><span class="p">]</span> <span class="o">=</span> <span class="n">pow</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">gid</span><span class="p">]</span> <span class="o">+</span> <span class="n">b</span><span class="p">[</span><span class="n">gid</span><span class="p">],</span> <span class="n">POW</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></div>
-<p>Make $x=1000$</p>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> run_ocl_kernel(nvidia_queue, nvidia_program.sum16_pow, (N//16,), input_tuples, output_tuples)
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>3.74 ms ± 421 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> (a+b)**power
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/gordon/.local/lib/python3.6/site-packages/ipykernel_launcher.py:1: RuntimeWarning: overflow encountered in power
-  &#34;&#34;&#34;Entry point for launching an IPython kernel.
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>27.7 ms ± 1.71 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+<pre>2.53 ms ± 549 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 </pre>
 </div>
 </div>
@@ -14275,62 +13985,27 @@ NVIDIA CUDA
 
 </div>
 </div>
-</div><div class="fragment">
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name_properties</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;Device Name&quot;</span><span class="p">:</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">device_info</span><span class="o">.</span><span class="n">NAME</span><span class="p">,</span>
-    <span class="s2">&quot;Device Platform&quot;</span><span class="p">:</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">device_info</span><span class="o">.</span><span class="n">PLATFORM</span><span class="p">,</span>
-    <span class="s2">&quot;Device Type&quot;</span><span class="p">:</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">device_info</span><span class="o">.</span><span class="n">TYPE</span>
-<span class="p">}</span>
-
-<span class="n">processing_properties</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;Available Compute Units&quot;</span><span class="p">:</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">device_info</span><span class="o">.</span><span class="n">MAX_COMPUTE_UNITS</span><span class="p">,</span>
-    <span class="s2">&quot;Clockrate&quot;</span><span class="p">:</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">device_info</span><span class="o">.</span><span class="n">MAX_CLOCK_FREQUENCY</span>
-<span class="p">}</span>
-
-<span class="n">memory_properties</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;Available Global Memory&quot;</span><span class="p">:</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">device_info</span><span class="o">.</span><span class="n">GLOBAL_MEM_SIZE</span><span class="p">,</span>
-    <span class="s2">&quot;Available Constant Memory&quot;</span><span class="p">:</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">device_info</span><span class="o">.</span><span class="n">MAX_CONSTANT_BUFFER_SIZE</span><span class="p">,</span>
-    <span class="s2">&quot;Available Local Memory&quot;</span> <span class="p">:</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">device_info</span><span class="o">.</span><span class="n">LOCAL_MEM_SIZE</span>
-<span class="p">}</span>
-
-<span class="n">device_types</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="n">pyopencl</span><span class="o">.</span><span class="n">device_type</span><span class="o">.</span><span class="n">CPU</span><span class="p">:</span> <span class="s2">&quot;CPU&quot;</span><span class="p">,</span>
-    <span class="n">pyopencl</span><span class="o">.</span><span class="n">device_type</span><span class="o">.</span><span class="n">GPU</span><span class="p">:</span> <span class="s2">&quot;GPU&quot;</span>
-<span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">intel_platform</span> <span class="o">=</span> <span class="p">[</span><span class="n">platform</span> <span class="k">for</span> <span class="n">platform</span> <span class="ow">in</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">get_platforms</span><span class="p">()</span> 
+                  <span class="k">if</span> <span class="n">platform</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Intel(R) OpenCL&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">intel_platform</span> <span class="o">=</span> <span class="p">[</span><span class="n">platform</span> 
-                  <span class="k">for</span> <span class="n">platform</span> <span class="ow">in</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">get_platforms</span><span class="p">()</span> 
-                  <span class="k">if</span> <span class="n">platform</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Portable Computing Language&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">intel_devices</span> <span class="o">=</span> <span class="p">[</span><span class="n">intel_platform</span><span class="o">.</span><span class="n">get_devices</span><span class="p">()[</span><span class="mi">0</span><span class="p">]]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">device</span> <span class="ow">in</span> <span class="p">(</span><span class="n">intel_devices</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">device</span> <span class="ow">in</span> <span class="n">intel_platform</span><span class="o">.</span><span class="n">get_devices</span><span class="p">():</span>
     <span class="c1">#print out all of the device name properties, except the device type</span>
     <span class="k">for</span> <span class="n">property_name</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">name_properties</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="o">-</span> <span class="p">{</span><span class="s2">&quot;Device Type&quot;</span><span class="p">}):</span>
         <span class="n">property_string_args</span> <span class="o">=</span> <span class="p">(</span><span class="n">property_name</span><span class="p">,</span><span class="n">device</span><span class="o">.</span><span class="n">get_info</span><span class="p">(</span><span class="n">name_properties</span><span class="p">[</span><span class="n">property_name</span><span class="p">]))</span>
@@ -14366,14 +14041,24 @@ NVIDIA CUDA
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Device Name: pthread-Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
-Device Platform: &lt;pyopencl.Platform &#39;Portable Computing Language&#39; at 0x7fa60919e020&gt;
+<pre>Device Name: Intel(R) HD Graphics
+Device Platform: &lt;pyopencl.Platform &#39;Intel(R) OpenCL&#39; at 0x321d400&gt;
+Device Types: GPU
+Available Compute Units: 23
+Clockrate: 1100
+Available Constant Memory: 4294959103
+Available Global Memory: 13321633792
+Available Local Memory: 65536
+
+
+Device Name: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+Device Platform: &lt;pyopencl.Platform &#39;Intel(R) OpenCL&#39; at 0x321d400&gt;
 Device Types: CPU
 Available Compute Units: 8
-Clockrate: 3800
-Available Constant Memory: 4194304
-Available Global Memory: 14515052544
-Available Local Memory: 4194304
+Clockrate: 2800
+Available Constant Memory: 131072
+Available Global Memory: 16662528000
+Available Local Memory: 32768
 
 
 </pre>
@@ -14383,10 +14068,10 @@ Available Local Memory: 4194304
 </div>
 </div>
 
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>clinfo
@@ -14445,8 +14130,8 @@ Number of devices                                 2
   Max clock frequency                             1100MHz
   Device Partition                                (core)
     Max number of sub-devices                     0
-    Supported partition types                     by &lt;unknown&gt; (0x559800000000)
-    Supported affinity domains                    0x559800000000
+    Supported partition types                     by &lt;unknown&gt; (0x558D00000000)
+    Supported affinity domains                    0x558D00000000
   Max work item dimensions                        3
   Max work item sizes                             256x256x256
   Max work group size                             256
@@ -14486,7 +14171,7 @@ Number of devices                                 2
     IEEE754-2008 fused multiply-add               Yes
     Support is emulated in software               No
   Address bits                                    64, Little-Endian
-  Global memory size                              13321640346 (12.41GiB)
+  Global memory size                              13321633792 (12.41GiB)
   Error Correction support                        No
   Max memory allocation                           4294959103 (4GiB)
   Unified memory for Host and Device              Yes
@@ -14597,9 +14282,9 @@ Number of devices                                 2
     IEEE754-2008 fused multiply-add               Yes
     Support is emulated in software               No
   Address bits                                    64, Little-Endian
-  Global memory size                              16662536192 (15.52GiB)
+  Global memory size                              16662528000 (15.52GiB)
   Error Correction support                        No
-  Max memory allocation                           4165634048 (3.88GiB)
+  Max memory allocation                           4165632000 (3.88GiB)
   Unified memory for Host and Device              Yes
   Shared Virtual Memory (SVM) capabilities        (core)
     Coarse-grained buffer sharing                 Yes
@@ -14619,7 +14304,7 @@ Number of devices                                 2
   Global Memory cache line size                   64 bytes
   Image support                                   Yes
     Max number of samplers per kernel             480
-    Max size for 1D images from buffer            260352128 pixels
+    Max size for 1D images from buffer            260352000 pixels
     Max 1D or 2D image array size                 2048 images
     Base address alignment for 2D image buffers   64 bytes
     Pitch alignment for 2D image buffers          64 pixels
@@ -14706,7 +14391,7 @@ Number of devices                                 1
     IEEE754-2008 fused multiply-add               Yes
     Support is emulated in software               No
   Address bits                                    64, Little-Endian
-  Global memory size                              14515052544 (13.52GiB)
+  Global memory size                              14515044352 (13.52GiB)
   Error Correction support                        No
   Max memory allocation                           4294967296 (4GiB)
   Unified memory for Host and Device              Yes
@@ -14854,128 +14539,218 @@ NULL platform behavior
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Workitems-vs-Workgroups">Workitems vs Workgroups<a class="anchor-link" href="#Workitems-vs-Workgroups">&#182;</a></h2><p>Exploring different types of parallelism, using a more involved example, the Java string hash function.</p>
+<h2 id="Workitems-vs-Workgroups">Workitems vs Workgroups<a class="anchor-link" href="#Workitems-vs-Workgroups">&#182;</a></h2><p>Exploring different types of parallelism, with our trusty vector sum.</p>
 
 </div>
 </div>
 </div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="OpenCL-Task-vs-Data-Parallelism-Abstractions">OpenCL Task vs Data Parallelism Abstractions<a class="anchor-link" href="#OpenCL-Task-vs-Data-Parallelism-Abstractions">&#182;</a></h2><p><img src="./img/opencl_task_data_parallelism.png" alt="OpenCL Task vs Data Abstractions"></p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vectorising">Vectorising<a class="anchor-link" href="#Vectorising">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">kernel</span> <span class="kt">void</span> <span class="nf">sum16</span><span class="p">(</span><span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">a</span><span class="p">,</span> 
+                  <span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">b</span><span class="p">,</span>
+                  <span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">c</span><span class="p">){</span>
+  <span class="kt">int</span> <span class="n">gid</span> <span class="o">=</span> <span class="n">get_global_id</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+  <span class="n">c</span><span class="p">[</span><span class="n">gid</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">gid</span><span class="p">]</span> <span class="o">+</span> <span class="n">b</span><span class="p">[</span><span class="n">gid</span><span class="p">];</span>
+<span class="p">}</span>
+</pre></div>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> run_ocl_kernel(nvidia_queue, nvidia_program.sum16, (N//16,), input_tuples, output_tuples)
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.36 ms ± 528 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vectorised-+-Local-Memory">Vectorised + Local Memory<a class="anchor-link" href="#Vectorised-+-Local-Memory">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">kernel</span> <span class="kt">void</span> <span class="nf">sum16_local</span><span class="p">(</span><span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">a</span><span class="p">,</span> 
+                        <span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">b</span><span class="p">,</span>
+                        <span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">c</span><span class="p">){</span>
+  <span class="kt">int</span> <span class="n">wid</span> <span class="o">=</span> <span class="n">get_group_id</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">*</span><span class="n">WG_SIZE</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">lid</span> <span class="o">=</span> <span class="n">get_local_id</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+  <span class="n">local</span> <span class="n">float16</span> <span class="n">a_local</span><span class="p">[</span><span class="n">WG_SIZE</span><span class="p">],</span> <span class="n">b_local</span><span class="p">[</span><span class="n">WG_SIZE</span><span class="p">],</span> <span class="n">c_local</span><span class="p">[</span><span class="n">WG_SIZE</span><span class="p">];</span>
+
+  <span class="c1">// Copying on</span>
+  <span class="n">event_t</span> <span class="n">copyon</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+  <span class="n">copyon</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">async_work_group_copy</span><span class="p">(</span><span class="n">a_local</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">wid</span><span class="p">,</span> <span class="n">WG_SIZE</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">copyon</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">async_work_group_copy</span><span class="p">(</span><span class="n">b_local</span><span class="p">,</span> <span class="n">b</span> <span class="o">+</span> <span class="n">wid</span><span class="p">,</span> <span class="n">WG_SIZE</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">wait_group_events</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">copyon</span><span class="p">);</span>
+
+  <span class="n">c_local</span><span class="p">[</span><span class="n">lid</span><span class="p">]</span> <span class="o">=</span> <span class="n">a_local</span><span class="p">[</span><span class="n">lid</span><span class="p">]</span> <span class="o">+</span> <span class="n">b_local</span><span class="p">[</span><span class="n">lid</span><span class="p">];</span>
+
+  <span class="c1">// Copying off</span>
+  <span class="n">event_t</span> <span class="n">copyoff</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+  <span class="n">copyoff</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">async_work_group_copy</span><span class="p">(</span><span class="n">c</span> <span class="o">+</span> <span class="n">wid</span><span class="p">,</span> <span class="n">c_local</span><span class="p">,</span> <span class="n">WG_SIZE</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">wait_group_events</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">copyoff</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> run_ocl_kernel(nvidia_queue, nvidia_program.sum16_local, (N//16,), input_tuples, output_tuples)
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1.97 ms ± 51.1 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="But,-before-we-think-that-we're-too-clever:">But, before we think that we're too clever:<a class="anchor-link" href="#But,-before-we-think-that-we're-too-clever:">&#182;</a></h2><p>What about good old <code>numpy</code>?</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> (a+b)
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>668 µs ± 157 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Increasing-the-computational-work">Increasing the computational work<a class="anchor-link" href="#Increasing-the-computational-work">&#182;</a></h2><p>Now we make the kernel: $\vec{c} = {(\vec{a} + \vec{b}) }^{x}$</p>
+<div class="highlight"><pre><span></span><span class="n">kernel</span> <span class="kt">void</span> <span class="nf">sum16_pow</span><span class="p">(</span><span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">a</span><span class="p">,</span> 
+                      <span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">b</span><span class="p">,</span>
+                      <span class="n">global</span> <span class="n">float16</span> <span class="o">*</span><span class="n">c</span><span class="p">){</span>
+  <span class="kt">int</span> <span class="n">gid</span> <span class="o">=</span> <span class="n">get_global_id</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+  <span class="n">c</span><span class="p">[</span><span class="n">gid</span><span class="p">]</span> <span class="o">=</span> <span class="n">pow</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">gid</span><span class="p">]</span> <span class="o">+</span> <span class="n">b</span><span class="p">[</span><span class="n">gid</span><span class="p">],</span> <span class="n">POW</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<p>Make $x=1000$</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> run_ocl_kernel(nvidia_queue, nvidia_program.sum16_pow, (N//16,), input_tuples, output_tuples)
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3.26 ms ± 538 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">intel_context</span> <span class="o">=</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">Context</span><span class="p">(</span><span class="n">devices</span><span class="o">=</span><span class="n">intel_devices</span><span class="p">)</span>
-<span class="n">intel_queue</span> <span class="o">=</span> <span class="n">pyopencl</span><span class="o">.</span><span class="n">CommandQueue</span><span class="p">(</span><span class="n">intel_context</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Source data</span>
-<span class="n">N_words</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="mi">20</span>
-<span class="n">words</span><span class="p">,</span> <span class="n">offsets</span><span class="p">,</span> <span class="n">lengths</span> <span class="o">=</span> <span class="n">get_word_arrays_from_file</span><span class="p">(</span><span class="s2">&quot;shakespeare_words.txt&quot;</span><span class="p">,</span> <span class="n">N_words</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Intel Buffers</span>
-<span class="n">intel_buffers</span> <span class="o">=</span> <span class="n">create_data_buffers</span><span class="p">(</span><span class="n">intel_context</span><span class="p">,</span> <span class="n">words</span><span class="p">,</span> <span class="n">offsets</span><span class="p">,</span> <span class="n">lengths</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">intel_program</span> <span class="o">=</span> <span class="n">build_program</span><span class="p">(</span><span class="s2">&quot;java_hash.cl&quot;</span><span class="p">,</span> <span class="n">intel_context</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">intel_hashes</span> <span class="o">=</span> <span class="n">hash_words</span><span class="p">(</span><span class="n">intel_queue</span><span class="p">,</span> <span class="n">intel_program</span><span class="p">,</span> 
-                          <span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">offsets</span><span class="p">,</span> <span class="n">lengths</span><span class="p">,),</span> 
-                          <span class="n">intel_buffers</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">ref_java_hash</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Hashes a string into 32-bit integer value, as per the Java hash algorithm&quot;&quot;&quot;</span>
-    <span class="n">h</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
-        <span class="n">h</span> <span class="o">*=</span> <span class="mi">31</span>
-        <span class="n">h</span> <span class="o">+=</span> <span class="n">c</span>
-        <span class="n">h</span> <span class="o">&amp;=</span> <span class="mh">0xFFFFFFFF</span>
-        
-    <span class="k">return</span> <span class="p">((</span><span class="n">h</span> <span class="o">+</span> <span class="mh">0x80000000</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFFFFFFFF</span><span class="p">)</span> <span class="o">-</span> <span class="mh">0x80000000</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp_words_raw</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">words</span><span class="p">)[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">temp_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">temp_words_raw</span><span class="p">[</span><span class="n">offset</span><span class="p">:(</span><span class="n">offset</span><span class="o">+</span><span class="n">length</span><span class="p">)]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">offset</span><span class="p">,</span><span class="n">length</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">offsets</span><span class="p">[:</span><span class="n">N</span><span class="p">],</span><span class="n">lengths</span><span class="p">[:</span><span class="n">N</span><span class="p">])]</span>
-<span class="n">ref_hashes</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">fromiter</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">ref_java_hash</span><span class="p">,</span><span class="n">temp_words</span><span class="p">),</span><span class="n">numpy</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">i</span><span class="p">,(</span><span class="n">intel_hash</span><span class="p">,</span><span class="n">ref_hash</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">intel_hashes</span><span class="p">,</span> <span class="n">ref_hashes</span><span class="p">)):</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">intel_hash</span> <span class="o">!=</span> <span class="n">ref_hash</span><span class="p">):</span> 
-        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s2">&quot;Problem!&quot;</span><span class="p">,</span><span class="n">intel_hash</span><span class="p">,</span><span class="n">ref_hash</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> hash_words(intel_queue, intel_program, (words, offsets, lengths,), intel_buffers, local_size=(32,))
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> (a+b)**power
 </pre></div>
 
     </div>
@@ -14991,94 +14766,20 @@ NULL platform behavior
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>4.48 ms ± 41.8 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/home/gordon/.local/lib/python3.6/site-packages/ipykernel_launcher.py:1: RuntimeWarning: overflow encountered in power
+  &#34;&#34;&#34;Entry point for launching an IPython kernel.
 </pre>
 </div>
 </div>
 
-</div>
-</div>
-
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> numpy.fromiter(map(ref_java_hash,temp_words),numpy.int32)
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
 <div class="output_area">
 
     <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>424 ms ± 10 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numba</span>
-
-<span class="nd">@numba</span><span class="o">.</span><span class="n">jit</span><span class="p">(</span><span class="n">nopython</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">ref_java_hash_numba</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Hashes a string into 32-bit integer value, as per the Java hash algorithm&quot;&quot;&quot;</span>
-    <span class="n">h</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
-        <span class="n">h</span> <span class="o">*=</span> <span class="mi">31</span>
-        <span class="n">h</span> <span class="o">+=</span> <span class="n">c</span>
-        <span class="n">h</span> <span class="o">&amp;=</span> <span class="mh">0xFFFFFFFF</span>
-        
-    <span class="k">return</span> <span class="p">((</span><span class="n">h</span> <span class="o">+</span> <span class="mh">0x80000000</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFFFFFFFF</span><span class="p">)</span> <span class="o">-</span> <span class="mh">0x80000000</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> numpy.fromiter(map(ref_java_hash_numba,temp_words),numpy.int32)
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>292 ms ± 6.4 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+<pre>24.9 ms ± 1.13 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 </pre>
 </div>
 </div>
