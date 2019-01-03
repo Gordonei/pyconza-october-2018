@@ -22,7 +22,7 @@ From the root of the repo, these are the contents:
 │       ├── setup_nvida_gpu.sh # Assuming Ubuntu 16.04
 │       └── setup_xilinx_fpga.sh # Assuming AWS FPGA Developer AMI
 └── slides # Slides
-    └── PyConZA_Talk_October2018.pdf
+    └── PyConZA_OpenCL_Talk.slides.html
 ```
 
 ## Getting Started
